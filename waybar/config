@@ -1,0 +1,123 @@
+{
+    "height": 30,
+    "layer": "top",
+    "margin-top": 6,
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
+    "spacing": 5,
+    "modules-left": [
+        "custom/launcher",
+        "cpu",
+        "memory",
+        "hyprland/workspaces",
+        "custom/weather",
+        "wireplumber"
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+        "tray",
+        "backlight",
+        "network",
+        "battery",
+        "clock",
+        "custom/power-menu"
+    ],
+    "custom/launcher": {
+        "format": " <span color='#6a92d7'> </span>",
+        "on-click": "rofi -show drun"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": " {}%",
+        "max-length": 10,
+        "on-click": ""
+    },
+    "memory": {
+        "interval": 30,
+        "format": "  {}%",
+        "format-alt": " {used:0.1f}G",
+        "max-length": 10
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "urgent": ""
+        }
+    },
+    "custom/weather": {
+        "exec": "python ~/.config/waybar/weather.py",
+        "restart-interval": 300,
+        "return-type": "json",
+        "on-click": "xdg-open https://wttr.in/Jintan"
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "hyprland/window": {
+        "format": "{initialTitle} - {initialClass}"
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "backlight": {
+        "device": "eDP-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": ""
+    },
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": " wired",
+        "on-click": "",
+        "format-disconnected": "Disconnected  "
+    },
+    "battery": {
+        "bat": "BAT0",
+        "adapter": "ADP0",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "max-length": 20,
+        "format": "{icon} {capacity}%",
+        "format-warning": "{icon} {capacity}%",
+        "format-critical": "{icon} {capacity}%",
+        "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-full": "  {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "clock": {
+        "format": "<span color='#6a92d7'> </span>{:%H:%M}",
+        "format-alt": "<span color='#6a92d7'> </span>{:%a %b %d}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "custom/power-menu": {
+        "format": " <span color='#bf616a'>⏻ </span>",
+        "on-click": "shutdown -h now"
+    }
+}

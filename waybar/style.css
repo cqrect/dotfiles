@@ -1,0 +1,195 @@
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 17px;
+}
+
+window#waybar {
+    background-color: rgba(26, 27, 38, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-top: 8px transparent;
+    border-radius: 8px;
+    margin: 16px 16px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#cpu,
+#memory,
+#tray,
+#backlight,
+#network,
+#battery,
+#clock,
+#wireplumber,
+#custom-power-menu,
+#custom-weather,
+#custom-weather.severe,
+#custom-weather.sunnyDay,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.default {
+    padding: 0 10px;
+    color: #e5e5e5;
+    border-radius: 9.5px;
+    background-color: #1f2530;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #7984A4;
+    background-color: transparent;
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button.focused {
+    color: #bf616a;
+}
+
+#workspaces button.active {
+    color: #6a92d7;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+    border-radius: 7.8px;
+    background-color: #1f2530;
+}
+
+#cpu {
+    color: #fb958b;
+    background-color: #1f2530;
+}
+
+#memory {
+    color: #ebcb8b;
+    background-color: #1f2530;
+}
+
+#custom-launcher {
+    background-color: #1b242b;
+    color: #6a92d7;
+    border-radius: 7.5px;
+    padding: 0 3px;
+}
+
+#custom-weather.severe {
+    color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+    color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+    color: #cad3f5;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+    color: #c2ddda;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+    color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight {
+    color: #d6e7e5;
+}
+
+#custom-weather.default {
+    color: #dbd9d8;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#backlight {
+    color: #8fbcbb;
+}
+
+#network {
+    color: #b48ead;
+}
+
+#network.disconnected {
+    color: #f53c3c;
+}
+
+#battery {
+    color: #c0caf5;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+  color: #26a65b;
+}
+  
+#battery.critical:not(.charging) {
+color: #f53c3c;
+animation-name: blink;
+animation-duration: 0.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+#clock {
+    color: #c8d2e0;
+  }
+
+#custom-power-menu {
+border-radius: 9.5px;
+background-color: #1b242b;
+border-radius: 7.5px;
+padding: 0 5px;
+}
+
+#window {
+    color: #64727d;
+    padding: 0 10px;
+  }
+
+#wireplumber {
+    color: #7d9bba;
+}
+  
+@keyframes blink {
+    to {
+      background-color: rgba(30, 34, 42, 0.5);
+      color: #abb2bf;
+    }
+  }
