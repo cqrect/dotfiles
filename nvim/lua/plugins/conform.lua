@@ -1,0 +1,27 @@
+return {
+	"stevearc/conform.nvim",
+	dependencies = { "mason.nvim" },
+	lazy = false,
+	cmd = "ConformInfo",
+	keys = {
+		{
+			"<leader>f",
+			function()
+				require("conform").format({ formatters = { "injected" } })
+			end,
+			mode = { "n", "v" },
+			desc = "Format Injected Langs",
+		},
+	},
+	config = function()
+		require("conform").setup({
+			format_on_save = {
+				timeout_ms = 500,
+				lsp_fallback = true,
+			},
+			lua = { "stylua" },
+			python = { "isort", "black" },
+			javascript = { { "prettierd", "prettier" } },
+		})
+	end,
+}
