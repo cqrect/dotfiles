@@ -18,10 +18,14 @@ return {
 			format_on_save = {
 				timeout_ms = 500,
 				lsp_fallback = true,
+				-- local_ignore_filetypes = { "org" },
 			},
-			lua = { "stylua" },
-			python = { "isort", "black" },
-			javascript = { { "prettierd", "prettier" } },
+			formatters_by_ft = {
+				lua = { "stylua" },
+				python = { "isort", "black" },
+				javascript = { { "prettierd", "prettier" } },
+				go = { "goimports", "gofmt" },
+			},
 		})
 	end,
 }

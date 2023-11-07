@@ -95,7 +95,6 @@ return {
 				{ { name = "buffer" } },
 			}),
 			formatting = {
-				fields = { "kind", "abbr", "menu" },
 				format = function(_, item)
 					if kind_icons[item.kind] then
 						item.kind = kind_icons[item.kind] .. item.kind
@@ -116,5 +115,6 @@ return {
 			source.group_index = source.group_index or 1
 		end
 		require("cmp").setup(opts)
+		require("luasnip.loaders.from_vscode").lazy_load({ paths = { vim.fn.stdpath("config") .. "/lua/snippets" } })
 	end,
 }
