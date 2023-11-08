@@ -25,6 +25,13 @@ return {
 				python = { "isort", "black" },
 				javascript = { { "prettierd", "prettier" } },
 				go = { "goimports", "gofmt" },
+				css = { "prettier" },
+				typescript = { "prettier" },
+				jsonc = { "prettier" },
+				javascriptreact = { "prettier" },
+				scss = { "prettier" },
+				html = { "prettier" },
+				typescriptreact = { "prettier" },
 			},
 		})
 	end,

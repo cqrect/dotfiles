@@ -1,0 +1,12 @@
+{
+    "license": {
+        "prefix": "license",
+        "body": [
+            "// Copyright $CURRENT_YEAR <cqrect@gmail.com>. All rights reserved.",
+            "// Use of this source code is governed by a git",
+            "// license that can be found in the LICENSE file.",
+            "$0"
+        ],
+        "description": "license statement"
+    }
+}
