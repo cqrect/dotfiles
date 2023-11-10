@@ -24,6 +24,9 @@ return {
 				-- threshold = vim.log.levels.WARN,
 			},
 			on_attach = my_on_attach,
+			diagnostics = {
+				enable = true,
+			},
 		})
 	end,
 }
