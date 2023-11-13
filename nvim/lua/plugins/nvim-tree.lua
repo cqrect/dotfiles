@@ -25,7 +25,7 @@ return {
 			},
 			on_attach = my_on_attach,
 			diagnostics = {
-				enable = true,
+				enable = false,
 			},
 		})
 	end,

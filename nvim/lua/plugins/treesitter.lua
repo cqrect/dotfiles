@@ -29,6 +29,15 @@ return {
 					enable = true,
 					enable_autocmd = false,
 				},
+				incremental_selection = {
+					enable = true,
+					keymaps = {
+						init_selection = "<C-m>",
+						node_incremental = "<C-m>",
+						scope_incremental = false,
+						node_decremental = "<bs>",
+					},
+				},
 			})
 		end,
 	},

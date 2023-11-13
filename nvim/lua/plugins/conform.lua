@@ -32,6 +32,7 @@ return {
 				scss = { "prettier" },
 				html = { "prettier" },
 				typescriptreact = { "prettier" },
+				json = { "jq" },
 			},
 		})
 	end,
