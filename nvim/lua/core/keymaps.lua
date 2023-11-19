@@ -40,8 +40,7 @@ keymap("v", ">", ">gv^", opts)
 
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
-keymap("v", "p", '"_dp', opts)
-keymap("v", "P", '"_dP', opts)
+keymap("v", "p", '"_dP', opts)
 
 keymap("v", "d", '"_d', opts)
 keymap("v", "D", '"_D', opts)
