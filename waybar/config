@@ -29,7 +29,7 @@
     },
     "cpu": {
         "interval": 10,
-        "format": " {}%",
+        "format": " {usage}%",
         "max-length": 10,
         "on-click": ""
     },
@@ -89,8 +89,8 @@
         "on-click": ""
     },
     "network": {
-        "format-wifi": " {signalStrength}%",
-        "format-ethernet": " wired",
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "  wired",
         "on-click": "",
         "format-disconnected": "Disconnected  "
     },
@@ -103,7 +103,7 @@
             "critical": 15
         },
         "max-length": 20,
-        "format": "{icon} {capacity}%",
+        "format": "{icon}  {capacity}%",
         "format-warning": "{icon} {capacity}%",
         "format-critical": "{icon} {capacity}%",
         "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",

@@ -1,45 +1,41 @@
 local options = {
-	autowrite = true,
-	backup = false,
 	clipboard = "unnamedplus",
-	cmdheight = 0,
+	cmdheight = 1,
+	showmode = true,
 	conceallevel = 0,
-	fileencoding = "utf-8",
-	hlsearch = true,
-	ignorecase = true,
+	termguicolors = true,
 	mouse = "a",
-	pumheight = 10,
-	showmode = false,
-	showtabline = 2,
+	fileencoding = "utf-8",
+	ignorecase = true,
 	smartcase = true,
 	smartindent = true,
+	tabstop = 4,
+	shiftwidth = 4,
+	number = true,
+	relativenumber = true,
+	showtabline = 2,
+	wrap = false,
+	cursorline = true,
+	cursorcolumn = false,
+	showcmd = true,
+	backup = false,
+	hlsearch = true,
 	splitbelow = true,
 	splitright = true,
-	swapfile = false,
+	swapfile = true,
 	timeoutlen = 300,
 	undofile = true,
 	writebackup = false,
 	expandtab = true,
-	shiftwidth = 4,
-	tabstop = 4,
-	cursorline = true,
-	number = true,
-	relativenumber = true,
-	numberwidth = 4,
 	signcolumn = "yes",
-	wrap = true,
-	linebreak = true,
 	scrolloff = 8,
 	sidescrolloff = 8,
 	guifont = "JetBrainsMono Nerd Font:h17",
-	whichwrap = "bs<>[]hl",
 }
 
+vim.opt.shortmess:append("c")
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-vim.opt.shortmess:append("c")
-vim.opt.iskeyword:append("-")
-vim.opt.formatoptions:remove({ "c", "r", "o" })
-vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")
+vim.cmd("set whichwrap+=<,>,[,],h,l")
