@@ -15,8 +15,12 @@ return {
 			defaults = {
 				pickers = {
 					find_files = {
-						hidden = true,
+						hidden = false,
 					},
+				},
+				file_ignore_patterns = {
+					"^node_modules/",
+					"^src-tauri/target/",
 				},
 				mappings = {
 					i = {

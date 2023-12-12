@@ -58,7 +58,20 @@ return {
 				},
 			})
 			-- Gopls
-			lspconfig.gopls.setup({})
+			lspconfig.gopls.setup({
+				settings = {
+					gopls = {
+						hints = {
+							assignVariableTypes = true,
+							compositeLiteralFields = true,
+							constantValues = true,
+							functionTypeParameters = true,
+							parameterNames = true,
+							rangeVariableTypes = true,
+						},
+					},
+				},
+			})
 			-- Typescript
 			lspconfig.tsserver.setup({})
 			-- Tailwind css
@@ -75,6 +88,8 @@ return {
 			lspconfig.html.setup({})
 			-- CMake
 			lspconfig.cmake.setup({})
+			-- Vue
+			lspconfig.volar.setup({})
 		end,
 	},
 }

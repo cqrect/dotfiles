@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "117e0ccbc6b4d4b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "d63796a5f9438ae3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab58e1fc1c2705b8",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-12-09 23.46.24.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c7dc6a6b46609991",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9d2df60f484d62e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c0969b26191308e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "027c044bcb3f081e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "74d35e7d29f0f81b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ddde3061b0a6efd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "14c932f243d8f4ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e04929938a4acec9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-12-09 23.46.24.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66bf31777ecc18b6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-12-09 23.46.24.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d94bd16c01e2f921",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1e66d396790111a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-12-09 23.46.24.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
+    }
+  },
+  "active": "3c0969b26191308e",
+  "lastOpenFiles": [
+    "判断一元函数的间断点及类型.md",
+    "Excalidraw/Drawing 2023-12-09 23.46.24.excalidraw.md",
+    "Excalidraw",
+    "Pasted image 20231206003634.png",
+    "Pasted image 20231206003557.png",
+    "Pasted image 20231206001550.png"
+  ]
+}

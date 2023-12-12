@@ -19,7 +19,12 @@ return {
 				group_empty = true,
 			},
 			filters = {
+				git_ignored = true,
 				dotfiles = true,
+				custom = {
+					"node_modules",
+				},
+				exclude = {},
 			},
 		})
 	end,
